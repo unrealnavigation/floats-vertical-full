@@ -1,0 +1,202 @@
+li.logo a:link, li.logo a:visited,
+li.nav-small a:link, li.nav-small a:visited {
+  float: left;
+  padding: 0;
+  width: 100%;
+}
+
+li.logo a:hover, li.logo a:active, li.logo a:focus,
+li.nav-small a:hover, li.nav-small a:active, li.nav-small a:focus,
+li.logo-moblie a:hover, li.logo-moblie a:active, li.logo-moblie a:focus {
+  color: #00ff16;
+  background: none;
+}
+
+li.logo-moblie a:link, li.logo-moblie a:visited {
+  width: 93.5%;
+  padding: 0 0 0 6.5%;
+  float: left;
+  text-align: left;
+}
+
+.logo img, li.logo-moblie img {
+  width: 100%;
+  max-width: 70px;
+}
+
+.logo {
+  display: none;
+}
+
+.nav-small img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-small a {
+  float: left;
+}
+
+.nav-small a img {
+  float: right;
+  margin: 0 1.5%;
+}
+
+header {
+  width: 100%;
+  background: white;
+  float: left;
+  border-bottom: 3px double #00ff16;
+}
+header nav {
+  width: 100%;
+  background: white;
+  margin: 0 auto;
+  -webkit-transition: all, 0.25s;
+  -moz-transition: all, 0.25s;
+  -ms-transition: all, 0.25s;
+  -o-transition: all, 0.25s;
+  transition: all, 0.25s;
+}
+header nav ul {
+  float: left;
+  width: 100%;
+}
+header nav ul li {
+  float: left;
+  width: 50%;
+}
+header nav ul li a:link, header nav ul li a:visited {
+  width: 94%;
+  display: block;
+  padding: 1em 3%;
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+  font-family: "SourceSansProLight", helvetica, arial, sans-serif;
+  font-size: 1em;
+  -webkit-transition: all, 0.25s;
+  -moz-transition: all, 0.25s;
+  -ms-transition: all, 0.25s;
+  -o-transition: all, 0.25s;
+  transition: all, 0.25s;
+}
+header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus {
+  color: #000;
+  background: #00ff16;
+}
+
+article, footer {
+  float: right;
+  margin: 1em 4%;
+  width: 92%;
+}
+
+.smallnavjs {
+  margin-top: -6em;
+}
+
+@media screen and (min-width: 540px) and (min-height: 400px) {
+  .smallnavjs {
+    margin-top: 0 !important;
+  }
+
+  li.nav-small {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  li.logo-moblie {
+    display: none;
+  }
+
+  article, footer {
+    float: right;
+    margin: 1em 4%;
+    width: 62%;
+  }
+
+  div.container {
+    height: 100%;
+  }
+
+  header {
+    background: none;
+    height: 100%;
+    width: 30%;
+    margin: 0 auto;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 0px double #00ff16;
+    border-right: 5px double #00ff16;
+  }
+  header nav {
+    width: 100%;
+    float: left;
+    min-height: 100%;
+  }
+  header nav ul li:nth-of-type(5) a:link,
+  header nav ul li:nth-of-type(5) a:visited {
+    border-bottom: 0px solid #eee;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+  header nav ul li a:link, header nav ul li a:visited {
+    border-bottom: 2px solid #eee;
+    float: right;
+    text-align: right;
+    font-size: 1.1em;
+  }
+
+  li.logo a:link, li.logo a:visited {
+    -webkit-transition: all, 0.25s;
+    -moz-transition: all, 0.25s;
+    -ms-transition: all, 0.25s;
+    -o-transition: all, 0.25s;
+    transition: all, 0.25s;
+    width: 90%;
+    padding: 1em 5%;
+  }
+
+  li.logo a:hover, li.logo a:active, li.logo a:focus {
+    color: #000;
+    background: #00ff16;
+  }
+
+  li.logo a img {
+    float: right;
+  }
+}
+@media screen and (min-width: 800px) and (min-height: 400px) {
+  article, footer {
+    width: 67%;
+  }
+
+  header {
+    width: 25%;
+  }
+  header nav ul li a:link, header nav ul li a:visited {
+    width: 80%;
+    padding: 1em 10%;
+  }
+
+  li.logo a:link, li.logo a:visited {
+    width: 80%;
+    padding: 1em 10%;
+  }
+}
+@media screen and (min-width: 1000px) and (min-height: 400px) {
+  article, footer {
+    width: 72%;
+  }
+
+  header {
+    width: 20%;
+  }
+}

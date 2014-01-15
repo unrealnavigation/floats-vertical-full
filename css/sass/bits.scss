@@ -1,0 +1,30 @@
+///Variables 
+$v8: 1000px;
+$v6: 800px;
+$i4: 540px;
+$navfont: 'SourceSansProLight', helvetica, arial, sans-serif;
+$mainfont: 'SourceSansProRegular' helvetica, arial, sans-serif;
+$mainfont2: 'SourceSansProBold';
+$navbg: #fff;
+
+///Mixins 
+@mixin trans ($prop, $time) {
+  -webkit-transition: $prop, $time;
+  -moz-transition: $prop, $time;
+  -ms-transition: $prop, $time;
+  -o-transition: $prop, $time;
+  transition: $prop, $time;
+
+}
+
+@media screen and (min-width: $i4) {
+	
+}
+
+@media screen and (min-width: $v6) {
+	
+}
+
+@media screen and (min-width: $v8) {
+
+}
